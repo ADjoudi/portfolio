@@ -95,7 +95,7 @@ header button {
   display: flex;
   align-items: start;
   justify-content: space-around;
-  padding-top: 3rem;
+  padding-top: 12rem;
 }
 
 .techStack li {
@@ -114,3 +114,53 @@ header button {
 /*/ //////////////////////////
 ////////Projects//////////////
 //////////////////////////*/
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  padding-top: 9rem;
+  gap: 4.5rem;
+  align-items: center;
+}
+
+.projects h2 {
+  font-weight: 600;
+  font-size: 2.25rem;
+}
+
+.projects .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 6.18rem;
+  column-gap: 3rem;
+}
+
+.projects .container .project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project .imageContainer {
+  width: 19.75rem;
+  height: 17.31rem;
+  background-color: rgb(241, 241, 241);
+}
+
+.project h3 {
+  padding-top: 1.5rem;
+  padding-bottom: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.project p {
+  color: var(--secondary-color);
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.project img {
+  opacity: 0;
+}
