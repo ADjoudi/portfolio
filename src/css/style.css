@@ -8,6 +8,11 @@
   --secondary-color: #424242;
   --bg-accent-color: #a7a7a7;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body,
 h1,
@@ -21,18 +26,27 @@ li {
   font-family: "Montserrat", sans-serif;
 }
 
+h2 {
+  font-weight: 600;
+  font-size: 2.25rem;
+}
+
 body {
   width: 100vw;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 header {
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2.25rem 4rem;
-  padding-bottom: 0rem;
+  position: fixed;
+  background-color: var(--bg-color);
+  border-bottom: 2px solid rgb(246, 246, 246);
 }
 
 .navigation,
@@ -76,6 +90,7 @@ header button {
   justify-content: center;
   align-items: center;
   padding: 8rem 0rem;
+  padding-top: 16rem;
 }
 
 .hero h1 {
@@ -123,11 +138,6 @@ header button {
   align-items: center;
 }
 
-.projects h2 {
-  font-weight: 600;
-  font-size: 2.25rem;
-}
-
 .projects .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -163,4 +173,66 @@ header button {
 
 .project img {
   opacity: 0;
+}
+
+/*/ //////////////////////////
+////////Experience//////////////
+//////////////////////////*/
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 18rem;
+  gap: 10rem;
+}
+
+.experience ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+.experience ul li {
+  font-size: 1.5rem;
+}
+
+.experience span {
+  color: var(--accent-color);
+}
+
+/*/ //////////////////////////
+////////Bio//////////////
+//////////////////////////*/
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 18rem;
+  gap: 4rem;
+}
+
+.bio p {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 2.4;
+}
+
+/*/ //////////////////////////
+////////call//////////////
+//////////////////////////*/
+
+.call {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding-top: 18rem;
+  padding-bottom: 18rem;
+  gap: 6rem;
+}
+
+.call img {
+  padding-bottom: 6rem;
 }
