@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/ADjoudi/portfolio/issues"
   },
-  "homepage": "https://github.com/ADjoudi/portfolio#readme"
+  "homepage": "https://github.com/ADjoudi/portfolio#readme",
+  "dependencies": {
+    "css-loader": "^6.7.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  }
 }
