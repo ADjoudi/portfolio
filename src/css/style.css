@@ -13,14 +13,15 @@ body,
 h1,
 h2,
 h3,
+ul,
 li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -85,3 +86,31 @@ header button {
 .hero h1 span {
   color: var(--accent-color);
 }
+
+/*/ //////////////////////////
+////////TechStack//////////////
+//////////////////////////*/
+
+.techStack {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  padding-top: 3rem;
+}
+
+.techStack li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.techStack li h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+/*/ //////////////////////////
+////////Projects//////////////
+//////////////////////////*/
