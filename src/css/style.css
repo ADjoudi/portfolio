@@ -32,10 +32,10 @@ h2 {
 }
 
 body {
-  width: 100vw;
   display: flex;
   flex-direction: column;
   position: relative;
+  overflow-x: hidden;
 }
 
 header {
@@ -108,9 +108,10 @@ header button {
 
 .techStack {
   display: flex;
-  align-items: start;
-  justify-content: space-around;
+  align-items: end;
+  justify-content: center;
   padding-top: 12rem;
+  gap: 8rem;
 }
 
 .techStack li {
